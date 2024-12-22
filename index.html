@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RespiGuard</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="RespiGuard logo.jpeg" alt="RespiGuard Logo">
+        </div>
+        <h1>RespiGuard</h1>
+    </header>
+    <main>
+        <section class="info">
+            <h2>About Respiratory Diseases</h2>
+            <p>Respiratory diseases such as asthma and COPD are serious health issues affecting millions worldwide. Early detection and proper management are crucial for maintaining respiratory health.</p>
+            <p>Environmental factors like air quality, humidity, and temperature can significantly impact respiratory health. This is where RespiGuard comes in, combining sound analysis with environmental data to provide users with actionable insights.</p>
+        </section>
+        <section class="environmental-info">
+            <h2>Environmental Data</h2>
+            <div id="environmentalInfo"></div>
+            <canvas id="environmentalChart"></canvas>
+        </section>
+        <section class="audio-upload">
+            <h2>Upload Audio for Analysis</h2>
+            <input type="file" id="audioInput" accept="audio/*">
+            <button onclick="handleAudioUpload()">Analyze Audio</button>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 RespiGuard. All rights reserved.</p>
+    </footer>
+</body>
+</html>
